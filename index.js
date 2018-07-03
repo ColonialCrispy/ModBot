@@ -35,6 +35,7 @@ client.on(`guildMemberAdd`, member => {
     let jRole = message.guild.roles.find(`name`, `Student`)
     member.addRole(jRole)
 
+    
 
 
 })
