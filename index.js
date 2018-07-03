@@ -126,7 +126,7 @@ client.on('message', async (message) => {
         message.channel.send(hembed)
     }
 
-    if (message.content.startsWith(`c!warn`)) {
+    if (message.content.startsWith(`m!warn`)) {
         if (!message.member.hasPermission(`MANAGE_MESSAGES`)) return message.channel.send(`You do not have permission to do this!`)
         var wUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
         if (!wUser) return message.channel.send("Please mention a user!");
@@ -152,7 +152,7 @@ client.on('message', async (message) => {
 
     }
 
-    if (message.content.startsWith(`c!report`)) {
+    if (message.content.startsWith(`m!report`)) {
         if (!message.member.hasPermission(`MANAGE_MESSAGES`)) return message.channel.send(`You do not have permission to do this!`)
         var rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
         if (!rUser) return message.channel.send("Please mention a user!");
@@ -178,7 +178,7 @@ client.on('message', async (message) => {
     }
 
     ex1 = "./memes/ex1.png"; ex2 = "./memes/ex2.png"; ex3 = "./memes/ex3.png"; ex4 = "./memes/ex4.png"; ex5 = "./memes/ex5.png"; ex6 = "./memes/ex6.png"; ex7 = "./memes/ex7.png"; ex8 = "./memes/ex8.png"; ex9 = "./memes/ex9.png"; ex10 = "./memes/ex10.png"; ex11 = "./memes/ex11.png"; ex12 = "./memes/ex12.png"; ex13 = "./memes/ex13.png"; ex14 = "./memes/ex14.png"; ex15 = "./memes/ex15.png"; ex16 =  "./memes/ex16.png"; ex17 = "./memes/ex17.png"; ex18 = "./memes/ex18.png"; ex19 = "./memes/ex19.png"; ex20 = "./memes/ex20.jpg"; ex21 = "./memes/ex21.png"; ex22 = "./memes/ex22.png"; ex23 = "./memes/ex23.png"; ex24 = "./memes/ex24.png"; ex25 = "./memes/ex25.png"; ex26 = "./memes/ex26.png"; ex27 = "./memes/ex27.png"; ex28 = "./memes/ex28.png"; ex29 = "./memes/ex29.png";
-    if (message.content.startsWith ("c!expose")) {
+    if (message.content.startsWith ("m!expose")) {
         number = 29;
         var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;  
         switch (random) {
