@@ -2,7 +2,7 @@ const discord = require ('discord.js');
 const fs = require (`fs`);
 const ms = require (`ms`);
 var client = new discord.Client(); 
-const token = `NDYzNjkzNzUwMzg0NzIxOTIw.Dh0H-A.pD25mFW8SXnVou7R3CV1Adb-EvE`;
+const token = `get rekt jerry`;
 let warns = JSON.parse(fs.readFileSync("./warnings.json", "utf8"));
 
 client.on ("ready", () => {
